@@ -23,15 +23,16 @@ body {
     height: 11%;
     background-color: #51BBFE;
     margin-top: -15px;
+    border-radius: 15px 35px;
 }
 #wrapper #headder #right {
     margin-left: 7px;
     margin-top: 6px;
     float: left;
     padding-right: 28%;
+    border-bottom-left-radius: 36px 36px;
+    border-top-left-radius: 15px 15px;
 }
 #wrapper #headder #heading {
     padding-top: 3%;
-
-
 }
