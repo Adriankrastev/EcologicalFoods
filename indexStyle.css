@@ -22,4 +22,16 @@ body {
     width: 97%;
     height: 11%;
     background-color: #51BBFE;
+    margin-top: -15px;
+}
+#wrapper #headder #right {
+    margin-left: 7px;
+    margin-top: 6px;
+    float: left;
+    padding-right: 28%;
+}
+#wrapper #headder #heading {
+    padding-top: 3%;
+
+
 }
