@@ -38,3 +38,37 @@ body {
 #wrapper #headder #heading {
     padding-top: 3%;
 }
+#wrapper #nav {
+    margin-top: 23px;
+    background-color: #353D2F;
+    height: 3.5%;
+    padding-top: 12px;
+}
+#wrapper #nav .button {
+    width: 8%;
+    padding-left: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.3s;
+}
+
+#nav .button a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #BFDBFE;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #EAEAEA #EAEAEA #A5A5A5 #A5A5A5;
+    transition: 0.3s;
+}
+
+#nav .button a:hover {
+    color: #FFFFFF;
+    background-color: #60758E;
+	transform: translateY(-3px);
+}
