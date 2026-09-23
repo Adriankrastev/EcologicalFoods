@@ -45,11 +45,12 @@ body {
     padding-top: 12px;
 }
 #wrapper #nav .button {
-    width: 8%;
     padding-left: 9px;
     padding-top: 2px;
     padding-bottom: 2px;
     transition: 0.3s;
+    float: left;
+    padding-right: 9px;
 }
 
 #wrapper #nav .button:hover{
