@@ -8,7 +8,7 @@ body {
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 55%;
     background-color: #DFA06E;
     height: 1000px;
     padding-top: 10px;
@@ -43,7 +43,7 @@ body {
     background-color: #353D2F;
     height: 3.5%;
     padding-top: 12px;
-    padding-left: 6%;
+    padding-left: 8%;
 }
 #wrapper #nav .button {
     padding-left: 9px;
@@ -64,8 +64,8 @@ body {
     background-color: #BFDBFE;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 30px;
     border-width: 2px;
     border-style: solid;
