@@ -43,7 +43,7 @@ body {
     background-color: #353D2F;
     height: 3.5%;
     padding-top: 12px;
-    padding-left: 8%;
+    padding-left: 3.5%;
 }
 #wrapper #nav .button {
     padding-left: 9px;
@@ -64,13 +64,14 @@ body {
     background-color: #BFDBFE;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 30px;
     border-width: 2px;
     border-style: solid;
     border-color: #EAEAEA #EAEAEA #A5A5A5 #A5A5A5;
     transition: 0.3s;
+    font-size: 20px;
 }
 
 #nav .button a:hover {
