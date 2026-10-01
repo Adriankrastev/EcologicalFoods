@@ -10,7 +10,7 @@ body {
     margin-right: auto;
     width: 55%;
     background-color: #DFA06E;
-    height: 950px;
+    height: 960px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -73,6 +73,7 @@ body {
     background-color: #BFDBFE;
     margin-top: 10px;
     height: 150px;
+    padding-bottom: 10px;
 }
 
 
