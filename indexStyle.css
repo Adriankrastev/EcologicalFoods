@@ -23,7 +23,15 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+	transition: ease 0.3s;
 }
+
+#wrapper #footer .icon:hover{
+	
+	transform: translateY(-5px);
+}
+
+
 #wrapper #footer #size {
     font-size: 24px;
     font-style: oblique;
