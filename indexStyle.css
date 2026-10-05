@@ -124,4 +124,7 @@ body {
     float: left;
     margin-right: 5px;
     margin-left: 5px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 4px 8px -1px;
+    box-shadow: 2px 4px 8px -1px;
 }
