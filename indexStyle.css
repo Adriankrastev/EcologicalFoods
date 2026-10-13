@@ -93,7 +93,8 @@ body {
     padding-right: 9px;
 }
 
-#wrapper #nav .button:hover{
+#wrapper #nav .button:hover
+{
     transform: translateY(-3px);
 }
 
@@ -113,7 +114,8 @@ body {
     font-size: 20px;
 }
 
-#nav .button a:hover {
+#nav .button a:hover,
+#nav .button .active {
     color: #FFFFFF;
     background-color: #60758E;
     transform: translateY(-3px);
