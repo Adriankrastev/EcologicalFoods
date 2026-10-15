@@ -33,6 +33,11 @@
   </nav>
 	
   <main id="main">
+	  <div id="search-container">
+	  <input type="text" id="searchInput" placeholder="Търсене на продукт..." onkeyup="searchProducts()">
+	</div>
+	  
+	  
 	<div id="section1">
 		
 	  <h1 class="headingAlign" >Нашите топ предложения</h1>
@@ -83,18 +88,108 @@
 		<div class="product">
 		<div class="img"><img class="img" src="img/orehi.png" width="240" height="177" alt=""/></div>
 		  <hr class="line">
-	    <div class="text">№ 1: Сурови био орехови ядки (200 гр) </div>
+	    <div class="text">№ 6: Сурови био орехови ядки (200 гр) </div>
 	    <div class="price">Цена: 4,00 &#8364;</div>
       </div>
 	  
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/shake.png" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 7: Протеинов шейк на прах от конопено семе (350 г) </div>
+	    <div class="price">Цена: 5,50 &#8364;</div>
+      </div>
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/otsed.png" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 8: Био ябълков оцет (500 мл)</div>
+	    <div class="price">Цена: 6,00 &#8364;</div>
+      </div>
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/driedAronia.jpg" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 9: Сушени аронии без добавена захар (150 г)</div>
+	    <div class="price">Цена: 3,35 &#8364;</div>
+      </div>
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/tahan.png" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 10: Тахан от печен сусам (300 г)</div>
+	    <div class="price">Цена: 14,80 &#8364;</div>
+      </div>
+		
+		
 	  </div>
 	  
 	  
     <div id="section3">
+	  <h1 class="headingAlign" >Традиционен вкус</h1>
 	  
-	  
+		<div class="product">
+		<div class="img"><img class="img" src="img/milk.png" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 11: Краве кисело мляко с 3.6% масленост(400 г)</div>
+	    <div class="price">Цена: 2,80 &#8364;</div>
+      </div>
+		
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/chease.png" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 12: Зряло краве сирене „Еколаби“ (800 г)</div>
+	    <div class="price">Цена: 12,50 &#8364;</div>
+      </div>
+		
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/bread.png" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 13: Хляб с квас от лимец (600 г)</div>
+	    <div class="price">Цена: 2,00 &#8364;</div>
+      </div>
+		
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/солети.jpg" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 14: Био пълнозърнести солети с лимец и семена (180 г)</div>
+	    <div class="price">Цена: 1,40 &#8364;</div>
+      </div>
+		
+		
+		<div class="product">
+		<div class="img"><img class="img" src="img/apple.jpg" width="240" height="177" alt=""/></div>
+		  <hr class="line">
+	    <div class="text">№ 15: Домашен ябълков чипс с канела (50 г)</div>
+	    <div class="price">Цена: 0,60 &#8364;</div>
+      </div>
+		
 	  </div>
   </main>
+	<script>
+    function searchProducts() {
+      var input = document.getElementById('searchInput');
+      var filter = input.value.toLowerCase();
+      var products = document.getElementsByClassName('product');
+
+      for (var i = 0; i < products.length; i++) {
+        var textDiv = products[i].getElementsByClassName('text')[0];
+        if (textDiv) {
+          var txtValue = textDiv.textContent || textDiv.innerText;
+          if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            products[i].style.display = "";
+          } else {
+            products[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+	
+	
   <footer id="footer">
 	  
 	<p id="size">Изработил: Адриан Иванов Кръстев 12а &copy; никой няма право да копира този сайт</p>
@@ -106,10 +201,8 @@
 <div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="70" height="70" alt="facebook"/></a></div>
 	  <div id="time"><p id="datetime"></p>
 <script>
-  // Get current date and time
   var now = new Date();
   var datetime = now.toLocaleString();
-  // Insert date and time into HTML
   document.getElementById("datetime").innerHTML = datetime;
 </script>
 </div>

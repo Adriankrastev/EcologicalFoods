@@ -10,7 +10,7 @@ body {
     margin-right: auto;
     width: 55%;
     background-color: #DFA06E;
-    height: 1940px;
+    height: 2880px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -34,7 +34,6 @@ body {
 #wrapper #main #section2,
 #wrapper #main #section3 {
     height: 720px;
-    background-color: #FF0004;
 	
 }
 #main #section1 .headingAlign,
@@ -114,6 +113,7 @@ body {
 #wrapper #footer #size {
     font-size: 24px;
     font-style: oblique;
+    clear: both;
 }
 
 
@@ -149,7 +149,7 @@ body {
 #wrapper #main {
     background-color: #51BBFE;
     margin-top: 10px;
-    height: 1424px;
+    height: 2480px;
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
@@ -199,4 +199,25 @@ body {
     transform: translateY(-3px);
     -webkit-box-shadow: 4px 4px 11px -2px #60738A;
     box-shadow: 4px 4px 11px -2px #60738A;
+}
+
+#search-container {
+    text-align: center;
+    margin: 15px 0px 25px 0px;
+}
+
+#searchInput {
+    width: 60%;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px solid #353D2F;
+    background-color: #ECF5FF;
+    outline: none;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #60758E;
+    box-shadow: 0px 0px 8px rgba(96, 117, 142, 0.6);
 }
