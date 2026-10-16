@@ -3,38 +3,75 @@
 <head>
 <meta charset="utf-8">
 <title>Еколаби ООД</title>
-
 	
 <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
 <link href="aboutUs.css" rel="stylesheet" type="text/css">
-	<script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
-      </script>
-      <script type = "text/javascript">
-         google.charts.load('current', {packages: ['corechart']});     
-      </script>
-       <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Година', 'Продажби'],
-          ['2013',  34000      ],
-          ['2014',  62000     ],
-          ['2015',  84000       ],
-          ['2016',  94000      ]
-        ]);
+<!-- Google Charts Loader -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart']});
+  
+  // Set callbacks for both charts
+  google.charts.setOnLoadCallback(drawSalesChart);
+  google.charts.setOnLoadCallback(drawUsersChart);
 
-        var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Години',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 20000}
-        };
+  // First Chart: Sales Area Chart
+  function drawSalesChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Година', 'Продажби'],
+      ['2018', 34000],
+      ['2019', 62000],
+      ['2020', 84000],
+      ['2021', 94000]
+    ]);
 
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
+    var options = {
+      title: 'Продажби през годините',
+      titleTextStyle: {fontSize: 20, fontWeight: 'bold'},
+      backgroundColor: '',
+      hAxis: {title: 'Години', titleTextStyle: {color: '#000000'}},
+      vAxis: {minValue: 20000},
+      colors: ['#fbff00']
+    };
+
+    var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+
+  // Second Chart: Users Column Chart
+  function drawUsersChart() {
+    var data = google.visualization.arrayToDataTable([
+      ["Година", "Брой потребители", { role: "style" } ],
+      ["2018", 12000, "yellow"],
+      ["2019", 26000, "gold"],
+      ["2020", 43000, "orange"],
+      ["2021", 61000, "red"]
+    ]);
+
+    var view = new google.visualization.DataView(data);
+    view.setColumns([0, 1,
+                     { calc: "stringify",
+                       sourceColumn: 1,
+                       type: "string",
+                       role: "annotation" },
+                     2]);
+
+    var options = {
+      title: "Брой потребители по години",
+		backgroundColor: '',
+  fontSize: 20, 
+	fontWeight: 'bold',   
+	width: 600,
+      height: 400,
+	bar: {groupWidth: "95%"},
+      legend: { position: "none" },
+    };
+    
+    var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+    chart.draw(view, options);
+  }
+</script>
 </head>
 
 <body>
@@ -62,6 +99,11 @@
 	
   <main id="main">
 	<div id="chart_div" style="width: 100%; height: 500px;"></div>
+	  <p id="paragraphBold">Диаграмата показва ясно изразен ръст на продажбите през периода 2018–2021 г. През 2018 г. продажбите са 34 000, а през 2019 г. нарастват значително до 62 000. През 2020 г. положителната тенденция продължава и продажбите достигат 84 000. През 2021 г. е отчетена най-високата стойност от 94 000 продажби, въпреки че темпът на растеж се забавя. За целия разглеждан период продажбите са се увеличили с 60 000, което показва устойчиво развитие и нарастващ интерес към предлаганите продукти.</p>
+	  
+	  <div id="columnchart_values" style="width: 100%; height: 400px;"></div>
+	  
+	  <p id="paragraph2">Диаграмата показва постепенно увеличение на броя потребители на сайта в периода 2018–2021 г. През 2018 г. сайтът е посетен от 12 000 потребители, а през 2019 г. броят им нараства до 26 000. През 2020 г. потребителите достигат 43 000, което показва значително повишаване на интереса към сайта. Най-висока стойност е отчетена през 2021 г., когато броят на потребителите достига 61 000. За целия период потребителите са се увеличили с 49 000, което показва устойчиво развитие и все по-голяма популярност на сайта.</p>
 	  
 	</main>
   <footer id="footer">

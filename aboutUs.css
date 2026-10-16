@@ -10,7 +10,7 @@ body {
     margin-right: auto;
     width: 55%;
     background-color: #DFA06E;
-    height: 960px;
+    height: 1790px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -70,7 +70,7 @@ body {
 #wrapper #main {
     background-color: #51BBFE;
     margin-top: 10px;
-    height: 570px;
+    height: 1270px;
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
@@ -124,4 +124,10 @@ body {
 }
 #wrapper #main #piechart_3d {
     height: 400px;
+}
+#wrapper #main #paragraphBold {
+    font-size: 20px;
+}
+#wrapper #main #paragraph2 {
+    font-size: 20px;
 }
