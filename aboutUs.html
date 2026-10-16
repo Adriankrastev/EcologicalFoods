@@ -7,6 +7,34 @@
 	
 <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
 <link href="aboutUs.css" rel="stylesheet" type="text/css">
+	<script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart']});     
+      </script>
+       <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Година', 'Продажби'],
+          ['2013',  34000      ],
+          ['2014',  62000     ],
+          ['2015',  84000       ],
+          ['2016',  94000      ]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Години',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 20000}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 
 <body>
@@ -16,9 +44,9 @@
 	<h1 id="heading">"Еколаби" ООД</h1>
 	</header>
   <nav id="nav">
-	<div class="button"><a class="active" href="index.html" target="_self"><strong>Начало</strong></a></div>
+	<div class="button"><a href="index.html" target="_self"><strong>Начало</strong></a></div>
 	  
-	  <div class="button"><a href="aboutUs.html" target="_self"><strong>За фирмата</strong></a></div>
+	  <div class="button"><a class="active" href="aboutUs.html" target="_self"><strong>За фирмата</strong></a></div>
 	  
 	  <div class="button"><a href="catalog.html" target="_self"><strong>Каталог</strong></a></div>
 	  
@@ -33,7 +61,7 @@
   </nav>
 	
   <main id="main">
-	
+	<div id="chart_div" style="width: 100%; height: 500px;"></div>
 	  
 	</main>
   <footer id="footer">

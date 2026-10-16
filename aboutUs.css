@@ -122,3 +122,6 @@ body {
     -webkit-box-shadow: 4px 4px 11px -2px #60738A;
     box-shadow: 4px 4px 11px -2px #60738A;
 }
+#wrapper #main #piechart_3d {
+    height: 400px;
+}
