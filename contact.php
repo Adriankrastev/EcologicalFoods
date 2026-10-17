@@ -24,11 +24,11 @@
 	  
 	  <div class="button"><a class="active" href="contact.php" target="_self"><strong>Контакт</strong></a></div>
 	  
-	  <div class="button"><a href="#" target="_self"><strong>Галерия</strong></a></div>
+	  <div class="button"><a href="gallery.html" target="_self"><strong>Галерия</strong></a></div>
 	  
-	  <div class="button"><a href="#" target="_self"><strong>Промоция</strong></a></div>
+	  <div class="button"><a href="promotion.html" target="_self"><strong>Промоция</strong></a></div>
 	  
-	  <div class="button"><a href="#" target="_self"><strong>Автор</strong></a></div>
+	  <div class="button"><a href="author.html" target="_self"><strong>Автор</strong></a></div>
 	  
   </nav>
 	
@@ -54,7 +54,7 @@ function test_input($data) {
 ?>
 
 <h2>Вашето мнение е важно за нас!</h2>   
-    <div id="map">Content for  id "map" Goes Here</div>
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1949.9526908014527!2d24.325143847471665!3d42.20215048574838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acafe4d177b767%3A0x40f730e415bdb65b!2z0J_Qk9CY0Jw!5e0!3m2!1sbg!2sbg!4v1792254079824!5m2!1sbg!2sbg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   <label class="label">Име:</label> <input id="name1" name="name">
   <br><br>
