@@ -10,7 +10,7 @@ body {
     margin-right: auto;
     width: 55%;
     background-color: #DFA06E;
-    height: 1790px;
+    height: 1690px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -42,7 +42,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 97%;
-    height: 11.5%;
+    height: 112px;
     background-color: #BFDBFE;
     margin-top: -15px;
     border-radius: 15px 35px;
@@ -63,7 +63,7 @@ body {
 #wrapper #nav {
     margin-top: 23px;
     background-color: #353D2F;
-    height: 3.5%;
+    height: 2.5%;
     padding-top: 12px;
     padding-left: 3.5%;
 }
