@@ -1,1 +1,191 @@
 @charset "utf-8";
+body {
+    background-image: -webkit-linear-gradient(315deg,rgba(126,161,114,1.00) 0%,rgba(53,61,47,1.00) 100%);
+    background-image: -moz-linear-gradient(315deg,rgba(126,161,114,1.00) 0%,rgba(53,61,47,1.00) 100%);
+    background-image: -o-linear-gradient(315deg,rgba(126,161,114,1.00) 0%,rgba(53,61,47,1.00) 100%);
+    background-image: linear-gradient(135deg,rgba(126,161,114,1.00) 0%,rgba(53,61,47,1.00) 100.00%);
+}
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    background-color: #DFA06E;
+    height: 1200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+#wrapper #footer .icon {
+    width: 70px;
+    height: 100px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    transition: ease 0.3s;
+}
+
+#wrapper #footer .icon:hover{
+	
+	transform: translateY(-5px);
+}
+
+
+#wrapper #footer #size {
+    font-size: 24px;
+    font-style: oblique;
+}
+
+
+#wrapper #headder {
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    height: 11.5%;
+    background-color: #BFDBFE;
+    margin-top: -15px;
+    border-radius: 15px 35px;
+    -webkit-box-shadow: 4px 8px 27px -1px #000000;
+    box-shadow: 4px 8px 27px -1px #000000;
+}
+#wrapper #headder #right {
+    margin-left: 7px;
+    margin-top: 6px;
+    float: left;
+    padding-right: 28%;
+    border-bottom-left-radius: 36px 36px;
+    border-top-left-radius: 15px 15px;
+}
+#wrapper #headder #heading {
+    padding-top: 3%;
+}
+#wrapper #nav {
+    margin-top: 23px;
+    background-color: #353D2F;
+    height: 3.5%;
+    padding-top: 12px;
+    padding-left: 3.5%;
+}
+#wrapper #main {
+    background-color: #51BBFE;
+    margin-top: 10px;
+    height: 770px;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 4px;
+}
+#wrapper #footer {
+    background-color: #BFDBFE;
+    margin-top: 10px;
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+
+#wrapper #nav .button {
+    padding-left: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.3s;
+    float: left;
+    padding-right: 9px;
+}
+
+#wrapper #nav .button:hover
+{
+    transform: translateY(-3px);
+}
+
+#nav .button a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #BFDBFE;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #EAEAEA #EAEAEA #A5A5A5 #A5A5A5;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+#nav .button a:hover,
+#nav .button .active {
+    color: #FFFFFF;
+    background-color: #60758E;
+    transform: translateY(-3px);
+    -webkit-box-shadow: 4px 4px 11px -2px #60738A;
+    box-shadow: 4px 4px 11px -2px #60738A;
+}
+#wrapper #main #picture {
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 4px 8px -1px;
+    box-shadow: 2px 4px 8px -1px;
+}
+#wrapper #main .product {
+    background-color: #ECF5FF;
+    width: 300px;
+    height: 400px;
+    float: left;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#main .product .img {
+    float: left;
+    border-top-left-radius: 50px 50px;
+    border-top-right-radius: 50px 50px;
+	transition: 0.3s ease;
+}
+
+#main .product .img:hover{
+    transform: scale(1.06);
+    -webkit-box-shadow: 2px 4px 5px -2px #000000;
+    box-shadow: 2px 4px 5px -2px #000000;
+}
+
+#main .product .line {
+    float: left;
+    border: 1px solid #000000;
+    background-color: #000000;
+    width: 300px;
+}
+#main .product .text {
+    font-style: italic;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#main .product .oldPrice {
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #FF0004;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+#main .product .newPrie {
+    float: right;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-right: 25px;
+    margin-top: 0px;
+    clear: both;
+}
+#wrapper #main #headinggg {
+    clear: both;
+}
+#wrapper #main #video {
+    float: left;
+}
