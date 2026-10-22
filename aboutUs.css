@@ -10,25 +10,24 @@ body {
     margin-right: auto;
     width: 55%;
     background-color: #DFA06E;
-    height: 1690px;
+    height: 1770px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0px;
 }
 #wrapper #footer .icon {
-    width: 70px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     float: right;
+    transition: ease 0.3s;
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: 10px;
-    transition: ease 0.3s;
+    margin-top: 25px;
 }
 
 #wrapper #footer .icon:hover{
-	
-	transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 
@@ -70,12 +69,16 @@ body {
 #wrapper #main {
     background-color: #51BBFE;
     margin-top: 10px;
-    height: 1270px;
+    height: 1370px;
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 4px;
 }
+#wrapper #main #Eco {
+    font-size: 20px;
+}
+
 #wrapper #footer {
     background-color: #BFDBFE;
     margin-top: 10px;

@@ -98,7 +98,12 @@
   </nav>
 	
   <main id="main">
+	  
+	  <p id="Eco"><strong>Еколаби ООД</strong> е фирма, специализирана в производството и търговията с екологично чисти храни. Компанията се стреми да предлага качествени и здравословни продукти, като същевременно се грижи за опазването на околната среда. Следващата диаграма представя развитието на фирмата през годините и показва промените в нейните продажби.</p>
+	  
 	<div id="chart_div" style="width: 100%; height: 500px;"></div>
+	  
+	  
 	  <p id="paragraphBold">Диаграмата показва ясно изразен ръст на продажбите през периода 2018–2021 г. През 2018 г. продажбите са 34 000, а през 2019 г. нарастват значително до 62 000. През 2020 г. положителната тенденция продължава и продажбите достигат 84 000. През 2021 г. е отчетена най-високата стойност от 94 000 продажби, въпреки че темпът на растеж се забавя. За целия разглеждан период продажбите са се увеличили с 60 000, което показва устойчиво развитие и нарастващ интерес към предлаганите продукти.</p>
 	  
 	  <div id="columnchart_values" style="width: 100%; height: 400px;"></div>
@@ -110,21 +115,27 @@
 	  
 	<p id="size">Изработил: Адриан Иванов Кръстев 12а &copy; никой няма право да копира този сайт</p>
 	  
-    <div class="icon"><a href="https://www.tiktok.com/@worldmacins" target="_self"><img src="img/tiktok-icon-free-png.webp" width="70" height="70" alt="ticktock"/></a></div>
+    <div class="icon"><a href="https://www.tiktok.com/@worldmacins" target="_self"><img src="img/tiktok-icon-free-png.webp" width="50" height="50" alt="ticktock"/></a></div>
 	  
-  <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="70" height="70" alt="insta"/></a></div>
+  <div class="icon"><a href="https://www.instagram.com/adikr88/" target="_self"><img src="img/Instagram_icon.png" width="50" height="50" alt="insta"/></a></div>
 	
-<div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="70" height="70" alt="facebook"/></a></div>
-	  <div id="time"><p id="datetime"></p>
-<script>
-  // Get current date and time
-  var now = new Date();
-  var datetime = now.toLocaleString();
-  // Insert date and time into HTML
-  document.getElementById("datetime").innerHTML = datetime;
-</script>
-</div>
-  </footer>
+<div class="icon"><a href="https://www.facebook.com/profile.php?id=100041481893271&locale=bg_BG" target="_self"><img src="img/Facebook_Logo_(2019).png" width="50" height="50" alt="facebook"/></a></div>
+	  <div id="datetime"></div>
+
+    <script>
+        // Функция за обновяване на датата и часа
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').innerHTML = now.toLocaleString();
+        }
+
+        // Извикване на функцията веднага след зареждане на страницата
+        updateDateTime();
+
+        // Обновяване на датата и часа на всеки 1 секунда
+        setInterval(updateDateTime, 1000);
+    </script>
+	</footer>
 	</div>
 </body>
 </html>
