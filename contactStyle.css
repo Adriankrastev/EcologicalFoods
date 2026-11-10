@@ -10,7 +10,7 @@ body {
     margin-right: auto;
     width: 55%;
     background-color: #DFA06E;
-    height: 960px;
+    height: 1090px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -68,9 +68,9 @@ body {
     padding-left: 3.5%;
 }
 #wrapper #main {
-    background-color: #51BBFE;
+    background-color: #eeeefb;
     margin-top: 10px;
-    height: 570px;
+    height: 660px;
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
@@ -186,4 +186,103 @@ body {
     float: right;
     width: 49%;
     height: 300px;
+}
+
+.pattern {
+  background-image:  linear-gradient(30deg, #29a6ff 12%, transparent 12.5%, transparent 87%, #29a6ff 87.5%, #29a6ff), linear-gradient(150deg, #29a6ff 12%, transparent 12.5%, transparent 87%, #29a6ff 87.5%, #29a6ff), linear-gradient(30deg, #29a6ff 12%, transparent 12.5%, transparent 87%, #29a6ff 87.5%, #29a6ff), linear-gradient(150deg, #29a6ff 12%, transparent 12.5%, transparent 87%, #29a6ff 87.5%, #29a6ff), linear-gradient(60deg, #29a6ff80 25%, transparent 25.5%, transparent 75%, #29a6ff80 75%, #29a6ff80), linear-gradient(60deg, #29a6ff80 25%, transparent 25.5%, transparent 75%, #29a6ff80 75%, #29a6ff80);
+  background-size: 66px 115.5px;
+  background-position: 0 0, 0 0, 33px 57.75px, 33px 57.75px, 0 0, 33px 57.75px;
+  background-color: #eeeefb;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.37);
+    -webkit-backdrop-filter: blur(11px) saturate(120%);
+    backdrop-filter: blur(11px) saturate(120%);
+    border: 2px solid rgba(177, 190, 251, 0.72);
+    border-radius: 11px;
+    box-shadow: 0 7px 16px 4px rgba(202, 203, 247, 0.55);
+    color: #111827;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* browsers without backdrop-filter get a more solid panel so text stays readable */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+  }
+}
+
+
+.gender-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.gender-option {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.gender-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.gender-option:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: #5A5A5A;
+    box-shadow: 2px 3px 4px -2px #383838;
+}
+
+.gender-option input[type="radio"]:checked + span {
+    color: #FFFFFF;
+}
+
+.gender-option:has(input[type="radio"]:checked) {
+    background-image: -webkit-linear-gradient(315deg,rgba(37,117,252,1.00) 0%,rgba(106,17,203,1.00) 100%);
+    border-color: transparent;
+    box-shadow: 2px 5px 3px -2px rgba(70,54,50,1.00);
+}
+
+#wrapper #main #working {
+    margin-top: 30px;
+    background-color: #D36135;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 300px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF #FFFFFF #000000 #000000;
+    border-radius: 30px;
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+#wrapper #main #working:hover{
+    background-color: #533B34;
+    color: #FFFFFF;
+    -webkit-box-shadow: 2px 5px 8px -2px #000000;
+    box-shadow: 2px 5px 8px -2px #000000;
 }
