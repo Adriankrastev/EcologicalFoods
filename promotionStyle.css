@@ -140,11 +140,26 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+#wrapper #main .discount {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #FF0004;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    z-index: 10; /* Ensures it stays on top of the image */
+}
+
 #main .product .img {
+    position: relative; /* Crucial: makes this the anchor for absolute children */
     float: left;
     border-top-left-radius: 50px 50px;
     border-top-right-radius: 50px 50px;
-	transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 
 #main .product .img:hover{
